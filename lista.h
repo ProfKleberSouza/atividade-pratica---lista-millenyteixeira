@@ -39,4 +39,15 @@ void new_lista(Lista *l){
   l->tam = 0;
 }
 //========================================
+
+void add_lista_begin(Lista *l, Produto p){
+
+  Celula *nova = new_celula();
+  nova->dado = p;
+
+  nova->prox = l->inicio->prox;
+  l->inicio->prox = nova;
+  l->tam++;
+
+}
 #endif 

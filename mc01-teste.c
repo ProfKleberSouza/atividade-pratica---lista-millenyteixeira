@@ -1,6 +1,6 @@
 #include <assert.h>
 #include <stdio.h>
-#include <lista.h>
+#include "lista.h" 
 
 int main(){
 
@@ -10,7 +10,7 @@ int main(){
 
   new_lista(estoque);
 
-  assert(estoque->tam==0 && estoque>inicio != NULL &&estoque->inicio==estoque->fim);
+  assert(estoque->tam==0 && estoque->inicio!= NULL &&estoque->inicio==estoque->fim);
 
   free(estoque);
 
